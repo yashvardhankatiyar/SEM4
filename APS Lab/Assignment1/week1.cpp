@@ -8,5 +8,5 @@ using namespace std;
 
 vector<int> selectionSort(vector<int> &v)
 {
-    he ajs
+
 }
