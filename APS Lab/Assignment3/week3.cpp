@@ -56,5 +56,32 @@ int main()
 }
 */
 
+// Consider a sorted array A of n elements. The array A may have repetitive/duplicate elements. For a 
+// given target element T, design and implement an efficient algorithm to find T’s first and last occurrence in 
+// the array A. Also print the message if an element was not present in the array.
 
+int main() {
+ cout<<"enter the size of elements : ";
+  int n;int k = 0;
+  cin>>n;
+  int arr[n];
+  cout<<"enter the elements : ";
+  for(int i=0;i<n;i++)
+    cin>>arr[i];
+
+  cout<<"enter target : ";
+  int target;
+  cin>>target;
+
+  for(int i=0;i<n;i++)
+    {  if(target == arr[i] && k == 0)                     
+    {
+      cout<<"target found at index "<<i<<endl;
+      
+      k++;
+    }
+     if(k>0 && arr[i] != target)
+       cout<<"target last occur at :"<<i-1;
+    }
+}
 
